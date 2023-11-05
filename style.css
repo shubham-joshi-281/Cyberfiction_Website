@@ -20,6 +20,19 @@ body {
   width: 100%;
   height: 100%;
 }
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader > img {
+  width: 150px;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -30,6 +43,8 @@ body {
   position: fixed;
   top: 0;
   z-index: 9;
+  background-color: #000;
+  color: #fff;
 }
 
 .logo {
@@ -45,7 +60,7 @@ body {
 
 .li > i {
   font-size: 2.5rem;
-  color: #000;
+  color: #ffffff;
 }
 #main {
   overflow: hidden;
@@ -56,7 +71,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  z-index: 99;
+  z-index: 999;
 }
 
 #page1 > canvas {
@@ -84,8 +99,8 @@ body {
   font-family: Gilroy;
 }
 #loop > h1 > span {
-  -webkit-content-stroke: 1px #000;
-  color: transparent;
+  -webkit-text-stroke: 2px #000000;
+  color: #ffffff;
 }
 @keyframes scroll {
   0% {
